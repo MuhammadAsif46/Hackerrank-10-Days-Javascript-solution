@@ -21,3 +21,14 @@ area = length * width
 perimeter = 2*(length+width)
 
 
+// Problem No: 04
+// Days 1: FUNCTIONS
+
+function factorial(n){
+    let sum=1;
+    for(let i=1; i<=n;i++){
+        sum *= i
+    }
+    return sum;
+}
+
