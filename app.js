@@ -32,3 +32,15 @@ function factorial(n){
     return sum;
 }
 
+
+// Problem No: 05
+// Days 1: LET AND CONST
+
+const PI = Math.PI
+// Reading Input
+let r = readLine();
+// Print the area of the circle:
+console.log(PI*r*r);
+// Print the perimeter of the circle:
+console.log(2*PI*r);
+
