@@ -118,3 +118,22 @@ function vowelsAndConsonants(s) {
       console.log(s[i]);
   }
 }
+
+
+// Problem No: 09
+// Day 2: Array
+
+function getSecondLargest(nums) {
+  // Complete the function
+  const compare = (a, b)=>{
+      return a - b
+  }
+  nums.sort(compare)
+  for(let i = nums.length-1;i--; ){
+      if(nums[i] != nums[i-1]){
+          return nums[i-1]
+      }
+  }
+ }
+let res =  getSecondLargest([2,3,5,6,6])
+console.log(res);
