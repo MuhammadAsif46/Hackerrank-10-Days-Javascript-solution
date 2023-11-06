@@ -121,7 +121,7 @@ function vowelsAndConsonants(s) {
 
 
 // Problem No: 09
-// Day 2: Array
+// Day 3: Array
 
 function getSecondLargest(nums) {
   // Complete the function
@@ -137,3 +137,18 @@ function getSecondLargest(nums) {
  }
 let res =  getSecondLargest([2,3,5,6,6])
 console.log(res);
+
+
+// Problem No: 10
+// Day 3: try,catch and finally
+
+function reverseString(s) {
+  try{
+      res = s.split("").reverse().join("");
+  }catch(err){
+      console.log(err.message);
+  }finally{
+      console.log(res)
+  }
+}
+reverseString("1234");
