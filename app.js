@@ -204,3 +204,20 @@ class Polygon {
      return sum;
   }
 }
+
+
+// Problem No: 15
+// Day 5: inhertance
+
+//.1
+Rectangle.prototype.area = function (){
+  return this.h * this.w;
+}
+
+//.2
+class Square extends Rectangle{
+  constructor(side){
+      super(side, side);
+      this.s2 = side;
+  }
+}
