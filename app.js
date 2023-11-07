@@ -162,3 +162,17 @@ function isPositive(a) {
   else if(a == 0 ) throw new Error ("Zero Error");
   else throw new Error ("Negative Error");
 }
+
+
+// Problem No: 12
+// Day 4: Create a Rectangle Object
+
+function Rectangle(a, b) {
+  const obj = {
+      length: a,
+      width: b,
+      perimeter:2*(a+b),
+      area: a*b
+  }
+  return obj;
+}
