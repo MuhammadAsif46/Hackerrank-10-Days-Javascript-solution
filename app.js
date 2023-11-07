@@ -186,3 +186,21 @@ function getCount(objects) {
       if(objects[i].x === objects[i].y) res++
   }return res;
 }
+
+
+// Problem No: 14
+// Day 4: Classes
+
+
+class Polygon {
+  constructor (arr1) {
+      this.arr2 = arr1;
+  }
+  perimeter(){
+     let sum = 0;
+     for(let i=0; i<this.arr2.length; i++){
+         sum += this.arr2[i];
+     } 
+     return sum;
+  }
+}
