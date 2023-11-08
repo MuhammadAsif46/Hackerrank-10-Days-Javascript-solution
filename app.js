@@ -221,3 +221,23 @@ class Square extends Rectangle{
       this.s2 = side;
   }
 }
+
+
+// Problem No: 16
+// Day 5: Tempalte, Litrals
+
+function sides(literals, ...expressions) {
+  let a = expressions[0];
+  let p = expressions[1];
+  let arr = [];
+  
+  let s1 = (p+Math.sqrt((p*p)-(16*a)))/4;
+  let s2 = (p-Math.sqrt((p*p)-(16*a)))/4;
+  
+  arr.push(s1);
+  arr.push(s2);
+  
+  arr.sort();
+  return arr;
+  
+}
