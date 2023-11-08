@@ -257,3 +257,20 @@ const modifyArray = (nums) => {
   }
   return nums;
 }
+
+
+// Problem No: 18
+// Day 6: Bitwise operator
+
+const getMaxLessThanK = (n, k)=>{
+  let res = 0;
+  for(let i=1; i<n; i++){
+      for(let j=i+1; j<=n; j++){
+          let answer = i & j;
+          if(answer > res && answer < k){
+              res = answer;
+          }
+      }
+  }
+  return res;
+}
