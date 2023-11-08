@@ -274,3 +274,20 @@ const getMaxLessThanK = (n, k)=>{
   }
   return res;
 }
+
+
+// Problem No: 19
+// Day 6: Javascript Dates
+
+// The days of the week are:
+// "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+
+function getDayName(dateString) {
+  let dayName;
+  let date = new Date(dateString);
+  
+  let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
+  dayName = weekDays[date.getDay()]
+  return dayName;
+}
