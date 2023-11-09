@@ -328,3 +328,21 @@ function regexVar() {
    */
   return re;
 }
+
+
+// Problem No: 22
+// Day 7: Regular Expressions 3
+
+function regexVar() {
+  /*
+   * Declare a RegExp object variable named 're'
+   * It must match ALL occurrences of numbers in a string.
+   */
+  let re;
+  re = /\d+/g;
+  // \d = [0-9]
+  /*
+   * Do not remove the return statement
+   */
+  return re;
+}
