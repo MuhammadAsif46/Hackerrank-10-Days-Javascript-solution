@@ -1,14 +1,13 @@
 /* day:8 create a button styles */
 
-#btn{
+/* #btn{
     width: 96px;
     height: 48px;
     font-size: 24px;
-}
+} */
 /* day:8  buttons contanier styles */
 
-#btns{
-    /* position: relative; */
+/* #btns{
     width: 75%;
 }
 
@@ -24,4 +23,47 @@
     width: 30%;
     height: 48px;
     font-size: 24px;
+} */
+
+
+/* day:9  binary Calculator styles */
+
+body{
+    width: 33%;
 }
+
+#res{
+    background-color: lightgray;
+    border:solid;
+    height: 48px;
+    font-size: 20px;
+}
+
+#btn0,
+#btn1{
+    background-color: lightgreen;
+    color: brown;
+}
+
+#btnClr,
+#btnEql{
+    background-color: darkgreen;
+    color: white;
+}
+
+#btnSum,
+#btnSub,
+#btnMul,
+#btnDiv{
+    background-color: black;
+    color: red;
+}
+
+button{
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0;
+    float: left;
+}
+
