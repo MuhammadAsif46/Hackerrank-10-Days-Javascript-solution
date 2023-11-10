@@ -393,7 +393,26 @@
 
 
 // Problem No: 25
-// Day 8: Binary Calculator
+// Day 9: Binary Calculator
 
+let buttons = document.querySelectorAll("button");
+let screenRes = document.getElementById("res");
 
+for(let data of buttons){
+  data.addEventListener("click",function(e){
+    let value = e.target.innerText;
+
+    if(value === "C"){
+      screenRes.innerHTML = "";
+      value = "";
+    }
+    else if(value === "="){
+      value = eval(screenRes.innerHTML.replace(/([01]+)/g,'0b$1')).toString();
+      screenRes.innerHTML = Number(value).toString(2);
+    }
+    else{
+      screenRes.innerHTML += value ;
+    }
+  })
+}
 
