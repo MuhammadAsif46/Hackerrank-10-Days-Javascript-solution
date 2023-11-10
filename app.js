@@ -351,11 +351,14 @@
 // // Day 8: Create A Button
 
 
-let i = 1
-const increment = ()=> {
-  let button = document.getElementById("btn");
-  button.innerHTML = i;
-  i++ ;
-}
+// let i = 1
+// const increment = ()=> {
+//   let button = document.getElementById("btn");
+//   button.innerHTML = i;
+//   i++ ;
+// }
+
+
+
 
 
